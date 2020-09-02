@@ -4,32 +4,7 @@ let button = document.querySelectorAll("button");
 let colorScaleRef = document.querySelector("#color-scaleRef");
 let site = document.getElementById("site")
 
-colors1 = ["teal", "steeleblue", "brown", "coral", "orange", "red"];
-colors2 = ["rgb(151, 53, 37)", "rgb(236, 153, 61)", "rgb(44, 214, 40)", "rgb(202, 103, 128)", "rgb(91, 152, 230)", "rgb(53, 78, 14)"];
-// button.addEventListener("click", function(){
-//     pickRandomColor();
-//     // console.log (pickRandomColor());
-//     body.style.backgroundColor = pickRandomColor();
-//     colorCode.textContent = body.style.backgroundColor;
-// })
-
-// colorScaleRef.addEventListener("click", function(){
-//     if(button.textContent === "RGB SCALE"){
-//         button.textContent = "HEX SCALE";
-//     } 
-//     else if(button.textContent === "HEX SCALE"){
-//         button.textContent = "RGB SCALE"
-//     }
-// })
-let siteStyle = {
-    backgroundColor: "blue",
-    border: "2px solid black",
-    borderRadius: "5px"
-    // THIS OBJECT WAS CREATED TO TRY TO AVOID 
-    // REPETIION OF SITE.STYLE ON BUTTON CLICK
-    // BUT IMPLEMENTATION WAS NOT ENTIRELY UNSUCCESSFUL;
-
-}
+colors = ["teal", "steeleblue", "brown", "coral", "orange", "red"];
 
 buttonListeners();
 
@@ -52,8 +27,7 @@ function buttonListeners(){
                 document.body.style.backgroundColor = colorCode.textContent;
             }
             site.style.backgroundColor = document.body.style.backgroundColor;
-            site.style.border = siteStyle.border;
-            // site.style.borderRadius = siteStyle.borderRadius;
+            site.style.border = "5px";
         })
     
         colorScaleRef.addEventListener("click", function(){
@@ -68,8 +42,8 @@ function buttonListeners(){
 }
 
 function pickRandomColor(){
-    let randomIndex = Math.floor(Math.random() * colors1.length);
-    return colors1[randomIndex];
+    let randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
 }
 
 function randomRGB(){
@@ -92,13 +66,3 @@ function randomHEX(len){
 setInterval(function(){
     site.style.color = randomRGB();
 }, 100)
-
-
-// function randomHEX(len){
-//     let hexColor = "";
-//     let charactersArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-//     for(let i = 0; i < len; i++){
-//         hexColor += charactersArr[Math.floor(Math.random() * charactersArr.length)];
-//     }
-//     return "#" + hexColor;
-// }
