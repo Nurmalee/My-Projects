@@ -61,36 +61,19 @@ function activateSqrListeners(){
 function buttonsAction(){
     //logic for behaviour of game level buttons
     for(let i = 0; i < mode.length; i++){
-        // mode[i].addEventListener("click", function(){
-        //     if(this.textContent === "easy"){
-        //         numOfColor = 3;
-        //     } else{
-        //         numOfColor = 6;
-        //     }
-        //     // mode[0].classList.remove("button-active");
-        //     // mode[1].classList.remove("button-active");
-        //     // this.classList.add("button-active");
-        //     for(let i = 0; i < squares.length; i++){
-        //         squares[i].innerHTML = "";
-        //     }
-        //     resetGame();
-        // })
-        mode[i].addEventListener("mouseover", function(){
-            this.style.backgroundColor = "black";
-            this.style.color = "white";
+        mode[i].addEventListener("click", function(){
             if(this.textContent === "easy"){
                 numOfColor = 3;
             } else{
                 numOfColor = 6;
             }
+            mode[0].classList.remove("button-active");
+            mode[1].classList.remove("button-active");
+            this.classList.add("button-active");
             for(let i = 0; i < squares.length; i++){
                 squares[i].innerHTML = "";
             }
             resetGame();
-        })
-        mode[i].addEventListener("mouseout", function(){
-            this.style.backgroundColor = "white";
-            this.style.color = "black";
         })
     }
 
@@ -132,19 +115,3 @@ function generateRandomColors(numOfColor){
     }
     return arr;
 }
-
-// document.querySelector("#tester").addEventListener("mouseover", function(){
-//     this.style.fontWeight = "bolder";
-//     this.style.backgroundColor = "white";
-// })
-
-// document.querySelector("#tester").addEventListener("mouseleave", function(){
-//     this.style.fontWeight = "normal";
-//     this.style.backgroundColor = "teal";
-// })
-
-// document.querySelector("input[type='text']").addEventListener("keypress", function(e){
-//     if(e.which === 13){
-//         document.querySelector("body").style.backgroundColor = "teal";
-//     }  
-// })
