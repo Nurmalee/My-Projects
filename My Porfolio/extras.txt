@@ -1,0 +1,53 @@
+font-family: 'Anton', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+
+
+I am a self taught front-end developer. Over the course of the past 6 months, I have taught myself the art of web design and/or web development by learning how to speak and read in the languages of the web (HTML 5, CSS 3 & JAVASCRIPT).
+
+ <!-- <div class="work">
+                <div id="work-display-image"></div>
+                <div class="work-info">
+                    <h3>Background Chooser</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsam illum aliquid perspiciatis sunt. Veritatis maiores minima tempore nostrum ullam.</p>
+                </div>
+                <div class="icons-and-explore">
+                    <div id="languages">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <a href="#" id="explore">explore</a>
+                </div>
+            </div> -->
+            <!-- <div class="work">
+                <div id="work-display-image"></div>
+                <div class="work-info">
+                    <h3>Background Chooser</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsam illum aliquid perspiciatis sunt. Veritatis maiores minima tempore nostrum ullam.</p>
+                </div>
+            </div>
+            <div class="work">
+                <div id="work-display-image"></div>
+                <div class="work-info">
+                    <h3>Background Chooser</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsam illum aliquid perspiciatis sunt. Veritatis maiores minima tempore nostrum ullam.</p>
+                </div>
+            </div> -->
+
+            <div class="work">
+                <div id="work-display-image" style="background-image: url();"></div>
+                <div class="work-info">
+                    <h3>Background Chooser</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsam illum aliquid perspiciatis sunt. Veritatis maiores minima tempore nostrum ullam.</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="#" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
