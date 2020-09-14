@@ -1,0 +1,222 @@
+body {
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    box-shadow: 0 0 25px black;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li,
+ul li a {
+    transition: 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+div#main-anchor {
+    padding: 0 10px;
+}
+
+a#nav-brand {
+    color: brown;
+    font-family: Impact, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+a#toggle-btn {
+    border: 1px solid brown;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+a#toggle-btn:hover {
+    background-color: brown;
+    color: white;
+}
+
+ul#nav-list li {
+    padding: 10px;
+}
+
+ul#nav-list li:hover {
+    background-color: #444;
+}
+
+ul#nav-list li a {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+ul#nav-list li:hover a{
+    color: white;
+}
+
+ul#nav-list li:first-child a {
+    color: white;
+}
+
+@media only screen and (max-width: 759px) {
+
+    div#main-anchor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        height: 0;
+        overflow: hidden;
+    }
+
+    ul#nav-list li a {
+        padding: 10px;
+    }    
+
+    ul#nav-list li:hover a {
+        padding-left: 10px;
+    }
+
+    ul#social-list {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    div#main-anchor {
+        padding: 0;
+    }
+
+    a#toggle-btn {
+        display: none;
+    }
+
+    ul#nav-list {
+        display: flex;
+    }
+
+    ul#nav-list li {
+        padding: 15px;
+    }
+
+    ul#social-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 120px;
+    }
+
+    ul#social-list li {
+        padding: 8px;
+        border-radius: 5px;
+        background-color: rgba(238, 238, 238, 0.315);
+        box-shadow: 0 0 2px #444;
+    }
+    
+    ul#social-list li a {
+        color: black;
+        font-weight: 900;
+        font-size: 12px;
+    }
+
+    ul#social-list li:hover a {
+        color: white;
+    }
+    
+    ul#social-list li:hover {
+        background-color: skyblue;
+    }
+    
+    ul#social-list li#facebook:hover {
+        background-color: rgb(18, 18, 117);
+    }
+    
+    ul#social-list li#instagram:hover {
+        background-color: rgb(141, 12, 62);
+    }
+}
+
+
+/** EXTRA CLASSES FOR EFFECTS**/
+.active {
+    background-color: #444;
+}
+
+.toggle-nav-links {
+    height: auto;
+}
+
+
+div#some-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: rgba(177, 228, 223, 0.527);
+    color: #444;
+    font-size: 14px;
+}
+
+h1#color-zone {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.click-me {
+    margin: 15px auto;
+    display: block;
+    padding: 10px 40px;
+    background-color: whitesmoke;
+    color: #444;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 1000ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.click-me:hover {
+    background-color: #444;
+    color: whitesmoke; 
+}
+
+#color-input {
+    width: 220px;
+    padding: 10px 5px;
+    margin-top: 15px;
+}

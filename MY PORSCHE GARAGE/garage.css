@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 0 20px #555;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.nav-list li a.nav-item {
+    padding: 5px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+ul.nav-list li a.nav-item:hover {
+    background-color: black;
+    color: white;
+    transition: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+ul.nav-list li a.nav-item:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    left: 0;
+    bottom: -5px;
+}
+
+ul.nav-list li a.nav-item:hover:after {
+    width: 100%;
+    transition: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+nav a#drive-btn {
+    padding: 7px 30px;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+nav a#drive-btn:hover {
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 0 5px #555;
+    transition: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+main {
+    text-align: center;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+
+main h1 {
+    font-size: 190px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 310px;
+    z-index: -1;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main div#car-scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.fa-arrow-alt-circle-left,
+.fa-arrow-alt-circle-right {
+    font-size: 30px;
+    color: #555;
+}
+
+.fa-arrow-alt-circle-left:hover,
+.fa-arrow-alt-circle-right:hover {
+    transform: scale(2.00);
+    color: #000;
+    transition: 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    box-shadow: 0 0 20px #555;
+}
+
+footer h3.footer-item {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+footer h3.footer-item span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+div#car-name {
+    padding: 0 10px;
+    width: 200px;
+}
+
+div#car-specs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 0 10px;
+}
+
+div#car-images {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#car-images img {
+    margin: 0 2px;
+}
+
+.activated {
+    background-color: black;
+    color: white;
+}
