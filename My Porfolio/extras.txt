@@ -51,3 +51,102 @@ I am a self taught front-end developer. Over the course of the past 6 months, I 
                     </div>
                 </div>
             </div>
+
+
+
+ <div class="work">
+                <div id="work-display-image" style="background-image: url(works/My-Porsche-Garage-Landing-Page.jpg)"></div>
+                <div class="work-info">
+                    <h3>My Porsche Garage</h3>
+                    <p>A landing page for my futuristic garage of exortic porsche cars, open to explore</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="https://nurmalee.github.io/My-Projects/MY PORSCHE GARAGE/garage.html" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work">
+                <div id="work-display-image" style="background-image: url(works/Watches-Landing-Page.jpg)"></div>
+                <div class="work-info">
+                    <h3>Watches HQ</h3>
+                    <p>A landing page for stylistics watches for both male and female</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="https://nurmalee.github.io/My-Projects/WATCHES HQ/watches.html" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work">
+                <div id="work-display-image" style="background-image: url(works/Doritos-UI.jpg)"></div>
+                <div class="work-info">
+                    <h3>Doritos Snacks UI</h3>
+                    <p>Ever seen a page made with bootstrap but doesn't look like it? This is a simple landing page or UI made for Doritos Snack. Animations made with GSAP javascript library</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="https://nurmalee.github.io/My-Projects/DORITOS UI/doritos.html" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work">
+                <div id="work-display-image" style="background-image: url(works/Brisk-and-Sleek.jpg)"></div>
+                <div class="work-info">
+                    <h3>Website for Brisk and Sleek Arch Ventures</h3>
+                    <p>Though still a work in progress, this is a website for a startup Architectural website. Through javascript it will be built with interesting functionalities which includes a database of projects</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="#" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work">
+                <div id="work-display-image" style="background-image: url(works/RGB-Color-Game.jpg)"></div>
+                <div class="work-info">
+                    <h3>RGB Color Guessing Game</h3>
+                    <p>A RGB Color Guessing game that when played consistently enhances your ability to visualize how colors look just from the color code. It has personally helped my color competencies</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="https://nurmalee.github.io/My-Projects/RGB Color Game/color.html" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work">
+                <div id="work-display-image" style="background-image: url(works/Background-Color-Flipper.jpg)"></div>
+                <div class="work-info">
+                    <h3>Background Color Flipper</h3>
+                    <p>Just a background color flipping page to exhibit the unlimited and unending array of color possibilities</p>
+                    <div class="icons-and-explore">
+                        <div id="languages">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <a href="https://nurmalee.github.io/My-Projects/Background Color Flipper/index.html" id="explore">explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
