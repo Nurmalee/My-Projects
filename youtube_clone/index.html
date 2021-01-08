@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The-Youtube-Clone</title>
+    <link rel="stylesheet" href="./library/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <header class="navlike-header">
+        <div class="navlike-left">
+            <i class="fas fa-bars"></i>
+            <img src="./images/youtube-dark-mode-logo.png" alt="YOUTUBE" class="youtube-logo">
+        </div>
+        <div class="navlike-center">
+            <input type="text" class="search" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="navlike-right">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-video"></i>
+            <i class="fas fa-th"></i>
+            <div id="notification-bell">
+                <i class="fas fa-bell"></i>
+                <span>9+</span>
+            </div>
+            <span class="userID"> N </span>
+        </div>
+    </header>
+
+    <section class="body-component">
+        <div class="body-component-nav">
+            <!-- <div class="navlike-left">
+                <i class="fas fa-bars"></i>
+                <img src="images/youtube-dark-mode-logo.png" alt="YOUTUBE" class="youtube-logo">
+            </div> -->
+
+            <ul class="body-component-navlist">
+                <li><a href="#" class="nav-links nav-link-active"> <i class="fas fa-home"></i> Home </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-fire"></i> Trending</a></li>
+                <li><a href="#" class="nav-links"> <i class="fab fa-youtube"></i> Subscriptions</a></li>
+            </ul>
+
+            <ul class="body-component-navlist">
+                <li><a href="#" class="nav-links"> <i class="fas fa-layer-group"></i> Library</a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-history"></i> History</a></li>
+                <li><a href="#" class="nav-links"> <i class="fab fa-algolia"></i> Your videos</a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-clock"></i> Watch later</a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-thumbs-up"></i> Liked videos</a></li>
+            </ul>
+            <button class="mode-btn">
+                <span class="mode">Dark</span>
+                <span class="moder">Dark</span>
+                <span class="mode">Light</span>
+            </button>
+
+            <ul class="body-component-navlist">
+                <h2>SUBSCRIPTIONS</h2>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> RED TV </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> official BRODA SHAGGI  </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> Clever Programmer </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> YAWA SKITS </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> XTREME comedian </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> freecodecamp.org </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> THECUTE ABIOLA </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> MC LIVELY </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> Mr Macaroni  </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> The ISLAM TV </a></li>
+                <li><a href="#" class="nav-links"> <i class="fas fa-user-circle"></i> Graphic Island </a></li>
+            </ul>
+        </div>
+        <div class="body-component-videos">
+    
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/anthonyjoshua_20201210_2.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2> Anthony Joshua Vs Kubrat Pulev Weigh in </h2>
+                        <p class="channel-name" >BGD Sports</p>
+                        <p>285K views . 3 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/anthonyjoshua_20201213_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Email Validation Check Using Vanilla Javascript - How To Check Email Valid or Not </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/athletic286_20210108_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>DUA FOR MAKING YOU RICH AND WEALTHY (Hadith) </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/anthonyjoshua_20201213_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Learn SASS in 5 minutes - PART 1 </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/cleverqazi_20201213_3.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>THE WALLET (YawaSkits, Episode 57) </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/jeremylynchofficial_20201217_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Сrіѕtіаnо Rоnаldо vs Frаnсе (11_10_2020) - HD 1080i </h2>
+                        <p class="channel-name">Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/muftimenkofficial_20201225_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Welcome to Cloud9 </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/thef2_20200701_2.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Why you should use a CSS Preprocessor! SASS, LESS are Better than CSS </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/tashaamos_20201127_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Creative Landing Page Design using Html CSS & Javascript - Website Design Tutorial </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/uchenwaefuna_20200226_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Create MySQL Database - MySQL Workbench Tutorial </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/miss_dyl_20200427_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Visual Studio Code - How to use git and github </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-content">
+                <div class="video">
+                    <div class="watch-queue">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <i class="fas fa-play"></i>
+                    <video class="video-file" muted loop>
+                        <source src="./videos/short_vids/rightpart2_20201016_1.mp4" type="video/mp4">
+                    </video>
+                    <span class="duration"></span>
+                </div>
+                <div class="video-description">
+                    <span class="userID"> N </span>
+                    <div class="video-information">
+                        <h2>Login Form Validation using HTML CSS & Javascript </h2>
+                        <p class="channel-name" >Clever Programmer</p>
+                        <p>28K views . 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <script src="./app.js"></script>
+</body>
+</html>

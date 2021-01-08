@@ -1,0 +1,87 @@
+//CHECK FOR HOW TO LOOP A VIDEO FROM START TO A CERTAIN TIME ON MOUSEOVER; 
+
+
+
+TIME CONVERSION
+
+***************************
+function format(time) {   
+    // Hours, minutes and seconds
+    var hrs = ~~(time / 3600);
+    var mins = ~~((time % 3600) / 60);
+    var secs = ~~time % 60;
+
+    // Output like "1:01" or "4:03:59" or "123:03:59"
+    var ret = "";
+    if (hrs > 0) {
+        ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
+    }
+    ret += "" + mins + ":" + (secs < 10 ? "0" : "");
+    ret += "" + secs;
+    return ret;
+}
+
+
+
+
+****************************
+var timestamp = 9462;
+
+// 2
+var hours = Math.floor(timestamp / 60 / 60);
+
+// 37
+var minutes = Math.floor(timestamp / 60) - (hours * 60);
+
+// 42
+var seconds = timestamp % 60;
+
+var formatted = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+
+console.log(formatted);
+
+
+
+********************************
+ // THIS IS TOO LONG HENCE THE PADSTART METHOD IS BETTER;
+    // if(hours < 10){
+    //     hours = "0" + hours;
+    // } else {
+    //     hours = hours;
+    // }
+
+    // if(minutes < 10){
+    //     minutes = "0" + minutes;
+    // } else {
+    //     minutes = minutes;
+    // }
+
+    // if(seconds < 10){
+    //     seconds = "0" + seconds;
+    // } else {
+    //     seconds = seconds;
+    // }
+    // let formattedTime = hours + ":" + minutes + ":" + seconds;
+
+
+******************************
+/*
+// TRIED USING THIS CODE TO SEE IF HOVERING ON THE ENTIRE VIDEO CONTENT  
+// AREA CAN TRIGGER PLAY METHOD ON VIDEO, BUT ISNT CURRENTLY SUCCESSFUL
+videoContent.forEach(function(videoContentItem){
+    const videoFileTarget = videoContentItem.querySelector(".video-file");
+    videoContentItem.addEventListener("mouseover", function(){
+        videoFileTarget.play();
+        videoFileTarget.previousElementSibling.style.visibility = "hidden";
+        videoFileTarget.nextElementSibling.style.visibility = "hidden";
+        setTimeout(function(){
+            videoFileTarget.pause();
+            videoFileTarget.previousElementSibling.style.visibility = "visible";
+            videoFileTarget.nextElementSibling.style.visibility = "visible";
+        }, 20000)
+    })
+    videoContentItem.addEventListener("mouseover", function(){
+        videoFileTarget.pause();
+        videoFileTarget.nextElementSibling.style.visibility = "visible";
+    })
+}) */
