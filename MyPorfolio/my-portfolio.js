@@ -101,7 +101,7 @@ navLinks.forEach(function(link){
 portfolioArr = 
 [
     {
-        img: "./images/works/Youtube-VanillaJs-Clone.JPG",
+        img: "./images/works/Product-Pricing-Page.JPG",
         pageName: "The Youtube Clone (Under Construction)",
         exploreLink: "https://nurmalee.github.io/My-Projects/youtube_clone/index.html",
     },
