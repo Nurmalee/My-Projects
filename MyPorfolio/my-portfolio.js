@@ -142,9 +142,9 @@ portfolioArr =
     },
     {
         img: "./images/works/Brisk-and-Sleek.JPG",
-        pageName: "Brisk and Sleek arch ventures ",
+        pageName: "Brisk and Sleek arch ventures (Under Construction)",
         exploreLink: "#",
-    },
+    }
    
     // {
     //     img: "images/works/Watches-Landing-Page.JPG",
