@@ -101,16 +101,15 @@ navLinks.forEach(function(link){
 portfolioArr = 
 [
     {
-        img: "./images/works/Product-Pricing-Page.JPG",
-        pageName: "Product Pricing Page",
-        exploreLink: "https://nurmalee.github.io/My-Projects/product_pricing/html/products.html",
-    },
-    {
         img: "./images/works/Youtube-VanillaJs-Clone.JPG",
         pageName: "The Youtube Clone (Under Construction)",
         exploreLink: "https://nurmalee.github.io/My-Projects/youtube_clone/index.html",
     },
-   
+    {
+        img: "./images/works/Product-Pricing-Page.JPG",
+        pageName: "Product Pricing Page",
+        exploreLink: "https://nurmalee.github.io/My-Projects/product_pricing/html/products.html",
+    },   
     {
         img: "./images/works/Pepsi-Landing-Page.JPG",
         pageName: "Pepsi Landing Page",
