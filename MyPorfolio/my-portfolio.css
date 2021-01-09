@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap');
+
+
+:root {
+    --transition-1000ms-cubic: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+    --bg-color-color: rgba(255, 255, 255, 0.938);
+    --bg-orange: rgb(201, 54, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 100vh;
+    overflow: hidden;
+    /* background: linear-gradient(#444, #333, brown); */
+    background-image: url(images/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: var(--transition-1000ms-cubic);
+}
+
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.nav-toggle-btn {
+    font-size: 25px;
+    padding: 4px 6px 3px 6px;
+    outline: 1px solid white;
+    transition: var(--transition-1000ms-cubic);
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.fa-bars {
+    color: #222;
+}
+
+.nav-toggle-btn-bg {
+    color: var(--bg-color-color);
+    outline-color: var(--bg-color-color);
+    transform: rotate(-90deg);
+}
+
+.list-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition-1000ms-cubic);
+}
+
+.nav-list {
+    list-style: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    letter-spacing: 1px;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    transition: var(--transition-1000ms-cubic);
+}
+
+.nav-link:hover {
+    /* background-color: #222; */
+    background-color: var(--bg-orange);
+    color: white;
+}
+
+#my-banner {
+    margin: auto;
+    font-weight: 100;
+}
+
+#my-banner h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#my-banner h1 span {
+    display: block;
+    font-size: 20px;
+}
+
+#my-banner h1 #surname {
+    display: inline-block;
+    color: rgb(223, 63, 4);
+    font-size: 45px;
+}
+
+#my-banner > p {
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#my-banner > p > span {
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#my-banner #social-links {
+    box-shadow: 0 0 5px white;
+}
+
+#my-banner #social-links a {
+    color: white;
+    transition: var(--transition-1000ms-cubic);
+}
+
+#my-banner #social-links a:hover {
+    color: brown;
+}
+
+.area-padding {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.rating-header,
+.contact-header {
+    margin-bottom: 20px;
+}
+
+#explore-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    margin-top: 2em;
+    padding: 10px 4rem;
+    letter-spacing: 5px;
+    font-size: 11px;
+    position: relative;
+    transition: var(--transition-1000ms-cubic);
+}
+
+#explore-btn::after {
+    bottom: -5px;
+    height: 1px;
+}
+
+#explore-btn:hover::after {
+    width: 70%;
+}
+
+/* CLASS ADDED IN JS FOR ANIMATION EFFECT */
+.explore-btn {
+    box-shadow: 0 0 15px white;
+}
+
+/* CLASS ADDED IN JS FOR FIXED NAVIGATION EFFECR */
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px #444;
+    z-index: 10;
+    transition: var(--transition-1000ms-cubic);
+}
+
+
+/** REPRESENTS EVERYTHING THAT HAPPENS TO NAVBAR 
+AND CONTENT ABOVE THE WIDTH OF 800px **/
+@media screen and (min-width: 801px) {
+
+    .navbar {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    .nav-toggle-btn {
+        display: none;
+    }
+
+    .list-container {
+        align-self: center;
+        height: auto !important;
+    }
+
+    .nav-list {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-link {
+        margin: 5px;
+        position: relative;
+        color: white;
+        display: inline-block;
+        padding: 5px 25px;
+    }
+
+    .nav-link:hover {
+        background-color: transparent;
+    }
+
+    .nav-link::after {
+        position: absolute;
+        content: "";
+        background-color: white;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        transition: var(--transition-1000ms-cubic);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    #my-banner p {
+        padding: 0 100px;
+    }
+
+    /* WORKS FOR FIXED NAV AND OTHER ACTIONS ON FIXED NAV FOR SPECIFIED MEDIA SCREEN SIZE ONLY */
+    .fixed-nav {
+        background-color: white;
+    }
+
+    .fixed-nav a {
+        color: #000;
+        font-weight: bolder;
+    }
+    
+    .fixed-nav a:hover {
+        color: #000;
+    }
+    
+    .fixed-nav .nav-link::after {
+        background-color: black;
+    }
+
+    /* GENERAL CLASS ADDED TO SECTIONS AND SIMILAR APPLICABLES */
+    .area-padding {
+        padding: 10px 10rem;
+    }
+}
+
+/* TO SHOW AND HIDE NAV-LIST THROUGH LIST-CONTAINER HEIGHT TOGGLE*/
+.show-links {
+    height: auto;
+}
+
+#rating-values {
+    text-align: center;
+    background-color: #ddd;
+    margin: 0 auto;
+    padding: 4rem 10px;
+}
+
+#rating-values > p {
+    margin: 0;
+    color: black;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.a-rating {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 8px;
+    display: block;
+    max-width: 600px;
+    padding: 5px;
+    background-color: white;
+    margin: 10px auto;
+    position: relative;
+    text-align: right;
+    border: 1px solid;
+}
+
+.a-rating::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(80, 7, 7); */
+    /* background-color: rgb(255, 68, 0); */
+    background-color: var(--bg-orange);
+    left: 0;
+    bottom: 0;
+}
+
+#css3::after {
+    width: 65%;
+}
+
+#javascript::after,
+#jQuery::after {
+    width: 30%;
+}
+
+.fa-star,
+.fa-star-half-alt {
+    color: orange;
+}
+
+
+/* PORTFOLIO AREA */
+.portfolio-header,
+.rating-header,
+.contact-header {
+    box-shadow: 0 0 10px #444;
+}
+
+.portfolio-works {
+    margin: 20px 50px;
+}
+
+@media screen and (min-width: 600px) {
+    .portfolio-works {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .work {
+        margin-bottom: 0;
+    }
+
+    #message-me {
+        min-width: 600px;
+        margin: 0 250px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .portfolio-works {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.work {
+    border: 1px solid black;
+    align-self: flex-start;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+    transition: var(--transition-1000ms-cubic);
+}
+
+
+/* ADDS ANIMATION TO WORS TAB WHERE CREAYED IN JS */
+.work-tab-animation {
+    box-shadow: 0 0 10px black;
+}
+
+#work-display-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+#work-display-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#work-display-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: var(--transition-1000ms-cubic);
+}
+
+#work-display-image:hover::after {
+    background-color: rgba(0, 0, 20, 0.411);
+}
+
+#work-display-image #explore {
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    transition: var(--transition-1000ms-cubic);
+    font-weight: 500;
+    border: 1px solid white;
+}
+
+#work-display-image:hover #explore {
+    visibility: visible;
+    transform: rotate(1800deg);
+}
+
+#work-display-image #explore:hover {
+    background-color: rgba(0, 0, 0, 0.898);
+}
+
+.work-info {
+    padding: 20px;
+    background-color: #ddd;
+    color: black;
+    /* background-color: rgba(213, 57, 1, 0.898); */
+    text-align: center;
+}
+
+.work-info h3 {
+    margin: 0 auto 10px auto;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.work-info p {
+    text-align: justify;
+}
+
+.fa-html5 {
+    color: orangered;
+    font-size: 20px;
+}
+
+.fa-css3-alt {
+    color: skyblue;
+    font-size: 20px;
+}
+
+.fa-js {
+    color: rgb(251, 227, 11);
+    font-size: 20px;
+}
+
+#explore {
+    padding: 5px 30px;
+    border: 1px solid black;
+    color: black;
+    font-size: 11px;
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    transition: var(--transition-1000ms-cubic);
+}
+
+#explore:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/***** FOR SOCIAL LINKS DIV UNDER CONTACT SECTION *****/
+.social-links {
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 100%);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.social-links a {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    transition: var(--transition-1000ms-cubic);
+}
+
+#facebook:hover {
+    color: rgb(24, 24, 146);
+}
+
+#twitter:hover,
+#mail:hover {
+    color: rgb(19, 165, 233);
+}
+
+#instagram:hover {
+    color: rgb(187, 25, 95);
+}
+
+#git:hover {
+    color: #999;
+}
+
+.contact-header {
+    background-color: white;
+}
+
+#message-me {
+    width: 400px;
+    display: grid;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    box-sizing: border-box;
+}
+
+#message-me input,
+#message-me textarea {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    outline: none;
+    border: none;
+    color: white;
+    /* background-color: rgb(26, 26, 26); */
+    background-color: #333;
+}
+
+#message-me input:focus,
+#message-me textarea:focus {
+   outline: none;
+   background-color: #777;
+}
+
+#message-me #explore {
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    background-color: transparent;
+}
+
+#message-me #explore:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(223, 63, 4);
+    transform: scaleX(0.5);
+    letter-spacing: 7px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 0 4em 0;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px #fff;
+    position: relative;
+}
+
+.footer .social-links {
+    bottom: 4em;
+}
+
+.scroll-to-top {
+    position: fixed;
+    z-index: 200;
+    font-size: 2rem;
+    color: var(--bg-orange);
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    visibility: hidden;
+    transition: var(--transition-1000ms-cubic);
+}
+
+.scroll-to-top a {
+    color: var(--bg-orange);
+}
+
+.scroll-to-top p {
+    margin: 0;
+    padding: 0;
+    font-size: 7px;
+    font-weight: 900;
+}
+
+.scroll-to-top-visibility {
+    visibility: visible;
+}
+
+.scroll-to-top-animation {
+    transform: scale(1.3);
+}

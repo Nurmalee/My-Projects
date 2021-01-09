@@ -3,175 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Porfolio</title>
+    <title>Nurmalee@portfolio.com</title>
 
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Oswald:wght@600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    
-    <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="library/fontawesome-free-5.14.0-web/css/all.min.css">
-   
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="./my-portfolio.css">
 </head>
 <body>
-    <nav>
-        <a href="#" id="brand">CODEDLEE...</a>
-        <ul class="nav-items">
-            <li><a href="#" class="nav-links"> Home </a></li>
-            <li><a href="#" class="nav-links"> About </a></li>
-            <li><a href="#" class="nav-links"> Contact </a></li>
-        </ul>
-    </nav>
-
-    <div class="about-me">
-        <h1 id="my-name">Nurudeen Lawal</h1>
-        <p id="my-info"> Front-End developer. Aspiring REACT and full stack Javascript/web developer. 
-            Over the span of the past 7 months I have been self teaching myself  the art of web design 
-            and/or web development by learning how to use, speak and read the languages of the web 
-            (<strong>HTML 5, CSS 3 & JAVASCRIPT</strong>), but with keen interest in Javascript and everything 
-            that roams around it. It has been quite interesting and I am loving every bit of it. Scroll
-            down to see a little what I can do.
-        </p> 
-        <a href="#" id="projects-btn">My portfolio</a>
-        <div id="social-links">
-          <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a> 
-            <a href="#" id="twitter"><i class="fab fa-twitter"></i></a> 
-            <a href="#" id="instagram"><i class="fab fa-instagram"></i></a> 
-            <a href="https://github.com/Nurmalee/My-Projects" id="git"><i class="fab fa-github"></i></a>
-            <a href="#" id="mail"><i class="fas fa-paper-plane"></i></a>
+    <header id="home">
+        <nav class="navbar">
+            <div id="nav-header">
+                <a href="#home" id="my-logo"><img src="images/Lee Logo.png" alt="LEE-EFFECT" height="80px"></a>
+                <button class="nav-toggle-btn"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="list-container">
+                <ul class="nav-list">
+                    <li><a href="#ratings" class="nav-link">my ratings</a></li>
+                    <li><a href="#portfolio" class="nav-link">works/portfolio</a></li>
+                    <li><a href="#about-me" class="nav-link">about me</a></li>
+                    <li><a href="#contact" class="nav-link">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="my-banner" class="area-padding">
+            <h1> NURUDEEN <span id="surname">LAWAL</span></h1>
+            <p>
+                <span>FRONT-END JAVASCRIPT and REACT DEVELOPER</span>. Full stack in view. Making the web space beautiful by designing enthralling UI coupled with efficient functionality for satisfactory UX.
+            </p>
+            <a href="#portfolio" id="explore-btn" class="nav-link">EXPLORE LEE</a>
+            <div class="social-links">
+                <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a> 
+                <a href="#" id="twitter"><i class="fab fa-twitter"></i></a> 
+                <a href="#" id="instagram"><i class="fab fa-instagram"></i></a> 
+                <a href="https://github.com/Nurmalee/My-Projects" id="git"><i class="fab fa-github" style="color:orange"></i></a>
+                <a href="#" id="mail"><i class="fas fa-paper-plane"></i></a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="my-ratings">
-        <div id="rating-heading">
-            <h1>My ratings (3.5/5*)</h1>
+
+    <section id="ratings">
+        <div class="area-padding rating-header">
+            <h1>HOW DO I FARE? (3.5/5*)</h1>
             <div><i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
                 <i class="far fa-star"></i>
             </div>
-            <p>Below are values showing approximately how I fare with some languages and technologies</p>
+            <p>Below are values showing approximately how I fare with some programming languages and technologies</p>
         </div>
         <div id="rating-values">
             <a href="#" class="a-rating">HTML5 - 80%</a>
             <a href="#" class="a-rating" id="css3">CSS3 - 65%</a>
-            <a href="#" class="a-rating" id="javascript">JAVASCRIPT - 35%</a>
-            <a href="#" class="a-rating" id="jQuery">JQUERY - 35%</a>
+            <a href="#" class="a-rating" id="javascript">JAVASCRIPT - 30%</a>
+            <a href="#" class="a-rating" id="jQuery">JQUERY - 30%</a>
             <a href="#" class="a-rating">BOOTSTRAP - 80%</a>
-            <a href="#" class="a-rating">ILLUSTRATOR - 80%</a>
+            <a href="#" class="a-rating">ADOBE ILLUSTRATOR - 80%</a>
             <a href="#" class="a-rating">COREL DRAW - 80%</a>
+
             <p><b>* Note: These values are not based on any assessment but on my personal discretion *</b></p>
         </div>
+    </section>
+
+
+    <section id="portfolio">
+        <div class="area-padding portfolio-header">
+            <h1>MY WORKS</h1>
+            <p>Some selections from the collection of my best works</p>
+        </div>
+        <div class="portfolio-works">
+            <!-- contents added via javascript -->
+            
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="area-padding contact-header">
+            <h1>CONTACT ME</h1>
+            <p>Reach out to me for appointments or collaborations. You can as well see more of my works including graphic design arts on my social media links</p>
+        </div>
+
+        <div id="message-me">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="subject" placeholder="Message Subject">
+    
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Message Here!!!"></textarea>
+            <a href="#" id="explore">MESSAGE LEE</a>
+        </div>
+        
+    </section>
+
+    <!-- SCROLL TO TOP ICON - ABSOLUTELY POSITIONED TO LEFT -->
+    <div class="scroll-to-top">
+        <a href="#home"><i class="fas fa-caret-square-up"></i></a>
+        <p>TO-TOP</p>
     </div>
 
-    <div class="portfolio">
-        <div id="portfolio-heading">
-            <h1>My portfolio</h1>
-            <p>Here is a sneak peak into my world of creative ideas - what I have done and what I can do is not limited to this</p>
+    <footer class="area-padding footer">
+        <img src="images/Lee Logo.png" alt="LEE-EFFECT" height="80px">
+        <div> Copyright &copy; The LeeEffect Company <span id="year"></span><br>
+            All rights reserved</div>
+        <div class="social-links">
+            <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a> 
+            <a href="#" id="twitter"><i class="fab fa-twitter"></i></a> 
+            <a href="#" id="instagram"><i class="fab fa-instagram"></i></a> 
+            <a href="https://github.com/Nurmalee/My-Projects" id="git"><i class="fab fa-github"></i></a>
+            <a href="#" id="mail"><i class="fas fa-paper-plane"></i></a>
         </div>
-        <div id="works-area">
-           <div class="work">
-                <div id="work-display-image" style="background-image: url(works/My-Porsche-Garage-Landing-Page.jpg)"></div>
-                <div class="work-info">
-                    <h3>My Porsche Garage</h3>
-                    <p>A landing page for my futuristic garage of exortic porsche cars, open to explore</p>
-                    <div class="icons-and-explore">
-                        <div id="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <a href="https://nurmalee.github.io/My-Projects/MY PORSCHE GARAGE/garage.html" id="explore">explore</a>
-                    </div>
-                </div>
-            </div>
+    </footer>
 
-            <div class="work">
-                <div id="work-display-image" style="background-image: url(works/Watches-Landing-Page.jpg)"></div>
-                <div class="work-info">
-                    <h3>Watches HQ</h3>
-                    <p>A landing page for stylistics watches for both male and female</p>
-                    <div class="icons-and-explore">
-                        <div id="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <a href="https://nurmalee.github.io/My-Projects/WATCHES HQ/watches.html" id="explore">explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work">
-                <div id="work-display-image" style="background-image: url(works/Doritos-UI.jpg)"></div>
-                <div class="work-info">
-                    <h3>Doritos Snacks UI</h3>
-                    <p>Ever seen a page made with bootstrap but doesn't look like it? This is a simple landing page or UI made for Doritos Snack. Animations made with GSAP javascript library</p>
-                    <div class="icons-and-explore">
-                        <div id="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <a href="https://nurmalee.github.io/My-Projects/DORITOS UI/doritos.html" id="explore">explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work">
-                <div id="work-display-image" style="background-image: url(works/Brisk-and-Sleek.jpg)"></div>
-                <div class="work-info">
-                    <h3>Website for Brisk and Sleek Arch Ventures</h3>
-                    <p>Though still a work in progress, this is a website for a startup Architectural website. Through javascript it will be built with interesting functionalities which includes a database of projects</p>
-                    <div class="icons-and-explore">
-                        <div id="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <a href="#" id="explore">explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work">
-                <div id="work-display-image" style="background-image: url(works/RGB-Color-Game.jpg)"></div>
-                <div class="work-info">
-                    <h3>RGB Color Guessing Game</h3>
-                    <p>A RGB Color Guessing game that when played consistently enhances your ability to visualize how colors look just from the color code. It has personally helped my color competencies</p>
-                    <div class="icons-and-explore">
-                        <div id="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <a href="https://nurmalee.github.io/My-Projects/RGB Color Game/color.html" id="explore">explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work">
-                <div id="work-display-image" style="background-image: url(works/Background-Color-Flipper.jpg)"></div>
-                <div class="work-info">
-                    <h3>Background Color Flipper</h3>
-                    <p>Just a background color flipping page to exhibit the unlimited and unending array of color possibilities</p>
-                    <div class="icons-and-explore">
-                        <div id="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <a href="https://nurmalee.github.io/My-Projects/Background Color Flipper/index.html" id="explore">explore</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer> Copyright CODEDLEE 2020 </footer>
-
-    <script src="portfolio.js"></script>
+    <script src="./my-portfolio.js"></script>
 </body>
 </html>
