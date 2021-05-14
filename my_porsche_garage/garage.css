@@ -1,37 +1,48 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;300;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+:root {
+    --transition: 400ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     height: 100vh;
-    overflow: hidden;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 5px 10px;
     box-shadow: 0 0 20px #555;
+    border: 1px solid;
 }
+
 
 nav a {
     text-decoration: none;
     color: black;
 }
 
-ul.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    padding: 0;
-    box-sizing: border-box;
+.nav-list {
+    display: none;
 }
 
-ul.nav-list li a.nav-item {
+.nav-item {
     padding: 5px 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Abel, sans-serif;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 900;
@@ -39,43 +50,49 @@ ul.nav-list li a.nav-item {
     position: relative;
 }
 
-ul.nav-list li a.nav-item:hover {
-    background-color: black;
+.nav-item:hover {
+    background-color: #333;
     color: white;
-    transition: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: var(--transition);
 }
 
-ul.nav-list li a.nav-item:after {
+.nav-item:after {
     content: "";
     position: absolute;
     width: 0;
     height: 3px;
-    background-color: black;
+    background-color: #333;
     left: 0;
     bottom: -5px;
 }
 
-ul.nav-list li a.nav-item:hover:after {
+.nav-item:hover:after {
     width: 100%;
-    transition: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: var(--transition);
 }
 
-nav a#drive-btn {
+.drive-btn {
     padding: 7px 30px;
     background-color: black;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-size: 11px;
-    font-weight: 600;
+    border: 1px solid black;
+    font-weight: 700;
+    transition: var(--transition);
 }
 
-nav a#drive-btn:hover {
+.drive-btn:hover {
     background-color: yellow;
     color: black;
-    border: 1px solid black;
     box-shadow: 0 0 5px #555;
-    transition: 1000ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.drive {
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 0 5px #555;
 }
 
 main {
@@ -84,87 +101,176 @@ main {
     margin: 20px 0 50px 0;
 }
 
-main h1 {
-    font-size: 190px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 310px;
-    z-index: -1;
-    color: #555;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+#car-scroll {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    height: 400px;
 }
 
-main div#car-scroll {
+#car-image {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 50px;
+    /* border: 2px solid; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.backlay {
+    font-size: 10vw;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: #fff;
+    font-family: Abel, sans-serif;
+}
+
+.backlay-ffect {
+    color: #ddd;
+    /* border: 2px solid; */
+}
+
+#car-image > img {
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 200ms;
+    transition: var(--transition);
+}
+
+.nextSlide {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.prevSlide {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.currentSlide {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .fa-arrow-alt-circle-left,
 .fa-arrow-alt-circle-right {
     font-size: 30px;
-    color: #555;
+    z-index: 10;
+    cursor: pointer;
+    transition: var(--transition);
+    color: #333;
 }
 
 .fa-arrow-alt-circle-left:hover,
 .fa-arrow-alt-circle-right:hover {
-    transform: scale(2.00);
-    color: #000;
-    transition: 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
-}
+    color: black;
+} 
 
 footer {
+    display: grid;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    /* padding: 0 30px; */
+    padding-bottom: 3px;
+    /* border: 3px solid teal; */
+    box-shadow: 0 0 5px #555;
+}
+
+#car-name {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+#car-name h3 span {
+    color: white;
+}
+
+#car-specs {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0 30px;
-    box-shadow: 0 0 20px #555;
+    padding: 5px 10px;
+    /* border: 1px solid green; */
 }
 
-footer h3.footer-item {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #444;
+#car-images {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* border: 1px solid; */
+}
+
+#car-images > div {
+    flex: 0.33;
+    height: 100%;
+    border: 1px solid;
+}
+
+#car-images > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-item {
+    font-family: Girassol, sans-serif;
     letter-spacing: 2px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-footer h3.footer-item span {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.footer-item span {
+    font-family: poppins, sans-serif;
     color: black;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 13px;
     text-transform: capitalize;
-}
-
-div#car-name {
-    padding: 0 10px;
-    width: 200px;
-}
-
-div#car-specs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    padding: 0 10px;
-}
-
-div#car-images {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-div#car-images img {
-    margin: 0 2px;
 }
 
 .activated {
     background-color: black;
     color: white;
+}
+
+@media screen and (min-width: 850px) {
+    ul.nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+    }
+
+    #car-scroll {
+        margin: 0 40px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 2fr 3fr ;
+    }
+
+    #car-specs{
+        justify-content: space-around;
+    }
+    
 }
