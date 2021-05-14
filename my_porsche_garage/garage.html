@@ -13,37 +13,51 @@
 </head>
 <body>
     <nav>
-        <a href="#" id="site-logo"><img src="images/porsche_logo_PNG8.png" alt="" height="70px"></a>
+        <a href="#" id="site-logo"><img src="images/porsche_logo_PNG8.png" alt="" height="60px"></a>
         <ul class="nav-list">
             <li><a href="#" class="nav-item">design</a></li>
             <li><a href="#" class="nav-item activated">highlights</a></li>
             <li><a href="#" class="nav-item">configure</a></li>
             <li><a href="#" class="nav-item">performance</a></li>
-            <li><a href="#" class="nav-item">configure</a></li>
         </ul>
-        <a href="#" id="drive-btn">test drive</a>
+        <a href="#" class="drive-btn">test drive</a>
     </nav>
 
     <main>
-        <h1 id="backlay">TAYCAN</h1>
         <div id="car-scroll">
             <i class="far fa-arrow-alt-circle-left arrow"></i>
-            <img id="car-main-image" src="images/Porsche-taycan-1.png" alt="" height="400px" width="750px">
+            <div id="car-image">
+                <h1 class="backlay" >TAYCAN</h1>
+                <img class="currentSlide" src="images/Porsche-taycan-1.png" alt="" data-id="0" >
+                <img class="nextSlide" src="images/carrera-0.png" alt="" data-id="1">
+                <img class="nextSlide" src="images/porsche-cayman-0.png" alt="" data-id="2" >
+            </div>
             <i class="far fa-arrow-alt-circle-right arrow"></i>
         </div>
     </main>
+    
 
     <footer>
-        <div id="car-name"><h3 class="footer-item">porsche <br> <span id="porsche-type">Taycan turbo s</span></h3></div>
+        <div id="car-name">
+            <h3 class="footer-item">porsche <br>
+                <span id="porsche-type">Taycan turbo s</span>
+            </h3>
+        </div>
         <div id="car-specs">
             <h3 class="footer-item">wltp <br> <span id="porsche-distance">412km</span></h3>
             <h3 class="footer-item">0-100KM/h <br> <span id="porsche-time">2.8s</span></h3>
             <h3 class="footer-item">hp <br> <span id="porsche-hp">560</span></h3>
         </div>
         <div id="car-images">
-            <img id="car-image-1" src="images/Porsche-taycan-5.jpeg" alt="" height="77px" width="165px">
-            <img id="car-image-2" src="images/Porsche-taycan-6.jpeg" alt="" height="77px" width="165px"> 
-            <img id="car-image-3" src="images/Porsche-taycan-7.jpeg" alt="" height="77px" width="165px">
+            <div>
+                <img id="car-image-1" src="images/Porsche-taycan-5.jpeg" alt="">
+            </div>
+            <div>
+                <img id="car-image-2" src="images/Porsche-taycan-6.jpeg" alt=""> 
+            </div>
+           <div>
+                <img id="car-image-3" src="images/Porsche-taycan-7.jpeg" alt="">
+           </div>
         </div>
     </footer>
 
